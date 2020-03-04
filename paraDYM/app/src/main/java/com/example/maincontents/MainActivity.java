@@ -1,5 +1,6 @@
 package com.example.maincontents;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -29,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         ActionBar bar = getSupportActionBar();
         bar.hide();
+
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+        startActivity(intent);
     }
 
 }
