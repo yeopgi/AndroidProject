@@ -1,4 +1,4 @@
-package com.example.maincontents;
+package com.example.paradym;
 
 import org.junit.Test;
 
