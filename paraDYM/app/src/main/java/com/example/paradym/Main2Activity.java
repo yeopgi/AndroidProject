@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class Main2Activity extends AppCompatActivity {
 
     private TextView titleTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,13 +19,12 @@ public class Main2Activity extends AppCompatActivity {
         ActionBar bar = getSupportActionBar();              // MainActivity의 타이틀바를
         bar.hide();
 
-
         SetTitleText();
     }
 
     public void SetTitleText() {
         String titleText = new String("동양미래대학교");
-        titleTextView = (TextView)findViewById(R.id.textView2);
+        titleTextView = (TextView) findViewById(R.id.textView2);
         titleTextView.setText(titleText);
         titleTextView.setTextColor(Color.RED);
     }
