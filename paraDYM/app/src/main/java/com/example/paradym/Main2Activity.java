@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         ActionBar bar = getSupportActionBar();              // MainActivity의 타이틀바를
-        bar.hide();
+        //bar.hide();
 
         SetTitleText();
     }
@@ -26,6 +26,6 @@ public class Main2Activity extends AppCompatActivity {
         String titleText = new String("동양미래대학교");
         titleTextView = (TextView) findViewById(R.id.textView2);
         titleTextView.setText(titleText);
-        titleTextView.setTextColor(Color.RED);
+        //titleTextView.setTextColor(Color.RED);
     }
 }

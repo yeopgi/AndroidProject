@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView idTextView;
     public static final int REQUEST_CODE_MENU = 101;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +23,10 @@ public class MainActivity extends AppCompatActivity {
         bar.hide();                                         // 제거하기 위한 코드
     }
 
-    public void onButton1Clicked(View v)
-    {
+    public void onButton1Clicked(View v) {
         Intent intent = new Intent(getApplicationContext(), Main2Activity.class);
         startActivityForResult(intent, REQUEST_CODE_MENU);
+        //startActivity(intent);
         //finish();
     }
-
 }
